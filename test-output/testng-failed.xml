@@ -1,14 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="seleniumwebdriver.webauto">
+      <class name="testclass.popup">
         <methods>
-          <include name="login"/>
-          <include name="setup"/>
+          <include name="popupclose"/>
         </methods>
-      </class> <!-- seleniumwebdriver.webauto -->
+      </class> <!-- testclass.popup -->
+      <class name="testclass.autosuggest_DropdownTest">
+        <methods>
+          <include name="autosuggestionselect"/>
+        </methods>
+      </class> <!-- testclass.autosuggest_DropdownTest -->
+      <class name="testclass.staticDrodown_test">
+        <methods>
+          <include name="dropdownselect"/>
+        </methods>
+      </class> <!-- testclass.staticDrodown_test -->
+      <class name="testclass.scroll_drag_drop">
+        <methods>
+          <include name="scroll_drag_dropTest"/>
+        </methods>
+      </class> <!-- testclass.scroll_drag_drop -->
+      <class name="testclass.calender_currentdateSelectTest">
+        <methods>
+          <include name="Currentdate_select"/>
+        </methods>
+      </class> <!-- testclass.calender_currentdateSelectTest -->
+      <class name="testclass.calender_AnydateSelectTest">
+        <methods>
+          <include name="calselect"/>
+        </methods>
+      </class> <!-- testclass.calender_AnydateSelectTest -->
+      <class name="testclass.mouseActions">
+        <methods>
+          <include name="mouseAction1"/>
+        </methods>
+      </class> <!-- testclass.mouseActions -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

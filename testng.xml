@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
+	
+  <test thread-count="50" parallel="classes" name="Test">
     <classes>
-      <class name="seleniumwebdriver.webauto"/>
+      <class name="testclass.autosuggest_DropdownTest"/>
+      <class name="testclass.calender_currentdateSelectTest"/>
+      <class name="testclass.calender_AnydateSelectTest"/>
+      <class name="testclass.popup"/>
+      <class name="testclass.staticDrodown_test"/>
+      <class name="testclass.mouseActions"/>
+      <class name="testclass.scroll_drag_drop"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
